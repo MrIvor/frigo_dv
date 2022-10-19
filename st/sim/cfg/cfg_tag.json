@@ -1,0 +1,53 @@
+{
+    "ip_info":{
+        "ddr":{
+            "branch" : "main"    ,
+            "tag"    : "latest"  ,
+            "design" : "latest"  ,
+            "verify" : "latest"
+        },
+        "usb":{
+            "branch" : "main"    ,
+            "tag"    : "latest"  ,
+            "design" : "latest"  ,
+            "verify" : "latest"
+        }
+    },
+    "soc_info":{ 
+        "frigo" :{
+            "branch" : "main"    ,
+            "tag"    : "latest"  ,
+            "design" : "latest"  ,
+            "verify" : "latest" 
+        }                   
+    },
+    "common_tag":{
+        "branch" : "main"   ,
+        "design" : "latest" ,
+        "verify" : "latest"
+    },
+    "soc_design_tag":{
+        "baranch": "main"  ,
+        "tag"    : "latest",
+        "design" : "latest",
+        "verify" : "latest"
+    },
+    "soc_verify_tag":{
+        "branch" : "main"  ,
+        "tag"    : "latest",
+        "design" : "latest",
+        "verify" : "latest"
+    },
+    "soc_fpga_tag":{
+        "branch" : "main"  ,
+        "tag"    : "latest",
+        "design" : "latest",
+        "verify" : "latest"
+    },
+    "soc_backend_tag":{
+        "branch" : "main"  ,
+        "tag"    : "latest",
+        "design" : "latest",
+        "verify" : "latest"
+    }
+}
