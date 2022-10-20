@@ -1,5 +1,5 @@
 unsetenv PROJ_NAME
-setenv   PROJ_NAME   frigoris
+setenv   PROJ_NAME   frigo
 
 unsetenv IS_BT_IT_ST 
 setenv   IS_BT_IT_ST st
@@ -17,17 +17,17 @@ set source_dir = `readlink -m "$source_cmd[2]" | xargs dirname`
 
 echo "source_dir: [$source_dir]"
 
-set proj_dir  = `echo $source_dir|sed "s?\(.*/$PROJ_NAME\).*?\1?"`
+set proj_dir  = `echo $source_dir|sed "s?\(.*/$PROJ_NAME\)\/.*?\1?"`
 
 echo "proj_dir: [$proj_dir]"
 
 unsetenv BT_IT_ST_HOME
-#setenv   BT_IT_ST_HOME $proj_dir/verify/$IS_BT_IT_ST
-setenv   BT_IT_ST_HOME $source_dir
+setenv   BT_IT_ST_HOME $proj_dir/"$PROJ_NAME"_dv/$IS_BT_IT_ST
 echo "BT_IT_ST_HOME: [$BT_IT_ST_HOME]"
 
 #source $proj_dir/env.csh
-set PROJ_HOME = `echo $source_dir|sed "s?\(.*/$PROJ_NAME\).*?\1?"`
+setenv PROJ_HOME  `echo $source_dir|sed "s?\(.*/$PROJ_NAME\)\/.*?\1?"`
+echo "PROJ_HOME: [$PROJ_HOME]"
 
 setenv TB_OUTDIR ./out/$source_cmd[3]
 
